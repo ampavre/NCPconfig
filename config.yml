@@ -11,9 +11,9 @@ logging:
       active: true
       prefix: '[AntiCheat] '
     file:
-      active: false
+      active: true
       prefix: ''
-      filename: nocheatplus.log
+      filename: anticheat.log
     ingamechat:
       active: true
       prefix: '&6AntiCheat: &e'
