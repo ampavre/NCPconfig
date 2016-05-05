@@ -9,14 +9,14 @@ logging:
   backend:
     console:
       active: true
-      prefix: '[NoCheatPlus] '
+      prefix: '[AntiCheat] '
     file:
       active: false
       prefix: ''
       filename: nocheatplus.log
     ingamechat:
       active: true
-      prefix: '&cNCP: &f'
+      prefix: '&6AntiCheat: &e'
       subscriptions: false
 data:
   expiration:
@@ -33,7 +33,7 @@ protection:
     hide:
       active: true
       nopermission:
-        message: '&cI''m sorry, but you do not have permission to perform this command. Please contact the server administrators if you believe that this is in error.'
+        message: '&6No Authorization'
         commands:
        - plugins
         - version
@@ -43,8 +43,8 @@ protection:
         commands: []
   commands:
     consoleonly:
-      active: false
-      message: '&cI''m sorry, but this command can''t be executed in chat. Use the console instead!'
+      active: true
+      message: '&6 [!] &eDenied. Use CONSOLE to execute this command'
       commands:
      - op
       - deop
@@ -474,7 +474,7 @@ strings:
   noswing: '[player] failed [check]: didn''t swing arm. VL [violations].'
   passable: '[player] failed [check]: moved into a block ([blockid]). VL [violations].'
   relog: '[player] failed [check]: relogs too fast. VL [violations].'
-  tellchatnormal: 'ncp tell [player] &cNCP: &eToo many messages, slow down...'
+  tellchatnormal: 'ncp tell [player] &6AntiCheat: &eToo many messages, slow down...'
   tempkick1: ncp tempkick [player] 1 Wait a minute!
   tempkick5: ncp tempkick [player] 5 You have five minutes to think about it!
   anglenocancel: '[player] failed [check]: tried to hit multiple entities at the same time. VL [violations]. Not Canceled.'
@@ -507,7 +507,7 @@ strings:
   warnchatfast: warn -a [player] Please do not spam in chat!
   punishchatfast: punish -a [player] You're not allowed to spam in chat!
   permachatfast: permaban -a [player] Severe chat spam is not tolerated.
-  permaflyhacks: permaban -a [player] Blatant flyhacks.
+  permaflyhacks: ban -a [player] Blatant flyhacks.
   warnchatnormal: warn -a [player] Too many messages, slow down...
   punishchatnormal: punish -a [player] Too many chat messages, please don't spam.
   bwrongkick: '[player] failed [check]: broke another block than clicked. VL [violations]. Player Kicked.'
