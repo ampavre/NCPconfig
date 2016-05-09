@@ -35,7 +35,7 @@ protection:
       nopermission:
         message: '&6No Authorization'
         commands:
-       - plugins
+        - plugins
         - version
         - icanhasbukkit
       unknowncommand:
@@ -46,7 +46,7 @@ protection:
       active: true
       message: '&6 [!] &eDenied. Use CONSOLE to execute this command'
       commands:
-     - op
+      - op
       - deop
   clients:
     motd:
@@ -120,7 +120,7 @@ checks:
     noswing:
       active: false
       exceptions:
-     - WATER_LILY
+      - WATER_LILY
       - FLINT_AND_STEEL
       actions: cancel vl>10 log:noswing:0:5:if cancel
     speed:
@@ -135,7 +135,7 @@ checks:
       active: false
       exclusions: []
       handleaschat:
-     - me
+      - me
       level: 10
       shortterm:
         ticks: 18
@@ -200,7 +200,7 @@ checks:
       level: 67
       message: |-
         &e>>>
-       &e>>> &cPlease &eslow down &cchat, &eyou might get kicked &cfor spam.
+        &e>>> &cPlease &eslow down &cchat, &eyou might get kicked &cfor spam.
         &e>>>
       timeout: 10
     relog:
@@ -238,7 +238,7 @@ checks:
       initialticks:
         join: -1
       ignore:
-     - FALL
+      - FALL
       modifiers:
         all: 0
     munchhausen:
@@ -516,7 +516,7 @@ compatibility:
   bukkitapionly: false
   blocks:
     ignorepassable:
-   - TRAP_DOOR
+    - TRAP_DOOR
     - WOODEN_DOOR
     - IRON_DOOR_BLOCK
     - PISTON_EXTENSION
