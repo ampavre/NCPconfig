@@ -9,14 +9,14 @@ logging:
   backend:
     console:
       active: true
-      prefix: '[AntiCheat] '
+      prefix: '&cAC> &7 '
     file:
       active: true
       prefix: ''
       filename: anticheat.log
     ingamechat:
       active: true
-      prefix: '&6AntiCheat: &e'
+      prefix: '&cAC> &7'
       subscriptions: false
 data:
   expiration:
@@ -142,7 +142,7 @@ checks:
         level: 3
       actions: log:commands:0:5:cf cancel vl>20 log:commands:0:5:cf cancel
     captcha:
-      active: true
+      active: false
       characters: abcdefghjkmnpqrtuvwxyzABCDEFGHJKMNPQRTUVWXYZ2346789
       length: 6
       question: '&cPlease type ''&6[captcha]&c'' to continue sending messages/commands.'
@@ -150,7 +150,7 @@ checks:
       tries: 3
       actions: cancel cmd:kickcaptcha vl>4 log:captcha:2:5:cf cancel cmd:kickcaptcha
     text:
-      active: true
+      active: false
       allowvlreset: true
       frequency:
         normal:
@@ -179,7 +179,7 @@ checks:
           lengthmsg: 1.0
           noletter: 0.0
       global:
-        active: true
+        active: false
         weight: 1.0
         words:
           active: false
@@ -188,7 +188,7 @@ checks:
         similarity:
           active: false
       player:
-        active: true
+        active: false
         words:
           active: false
         prefixes:
@@ -196,7 +196,7 @@ checks:
         similarity:
           active: false
     warning:
-      active: true
+      active: false
       level: 67
       message: |-
         &e>>>
